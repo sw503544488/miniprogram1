@@ -1,3 +1,27 @@
 .red {
     color: red;
 }
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    margin: auto;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers > .number {
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid black;
+}

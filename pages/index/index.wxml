@@ -1,1 +1,28 @@
-<view class="red">hi</view>
+<view class="red">
+    <view>
+        <button bindtap="x">
+            开始游戏
+        </button>
+    </view>
+    <view class="circle">?</view>
+    <view>开始猜数字</view>
+    <view class="numbers">
+        当前选择：
+        <picker class="number" bindchange="setX" value="{{x}}" range="{{arrayX}}">
+            <view class="picker">
+                {{x}}
+            </view>
+        </picker>
+        <picker class="number" bindchange="setY" value="{{y}}" range="{{arrayX}}">
+            <view class="picker">
+                {{y}}
+            </view>
+        </picker>
+    </view>
+    <button bindtap="guess">确定</button>
+    <view>
+        <text>猜大了</text>
+        <text>猜小了</text>
+        <text>猜对了</text>
+    </view>
+</view>
